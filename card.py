@@ -1,4 +1,5 @@
 from constant import Constant
+
 class Card:
 
     def __init__(self, suit, rank):
