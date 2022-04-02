@@ -1,3 +1,4 @@
+import random
 from card import Card
 from constant import Constant
 
@@ -12,9 +13,13 @@ class Deck:
 
                 self.all_cards.append(created_card)
 
+    def shuffle(self):
+        random.shuffle(self.all_cards)
+
 def function():
     new_deck = Deck()
-    print(new_deck.all_cards)
+    new_deck.shuffle()
+    print(new_deck.all_cards[0])
 
 if __name__ == "__main__":
     function()                
